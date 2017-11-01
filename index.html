@@ -1,98 +1,164 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Givebutter Fundraising</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/uikit.css" />
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-        <script src="js/uikit.min.js"></script>
-        <script src="js/uikit-icons.min.js"></script>
-    </head>
-    <body>
-      <div class="uk-margin-auto">
-      <div>
-        <h1>Your One Stop Shop For Fundraising</h1>
-        <h3>Jam-Packed with features to help you raise more money than you ever thought was possible</h3>
-      </div>
+  <head>
+      <title>Givebutter Fundraising</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/uikit.min.css" />
+      <link rel="stylesheet" href="css/my.css" />
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+      <script src="js/uikit.min.js"></script>
+      <script src="js/uikit-icons.min.js"></script>
 
-      <div class="uk-inline" uk-grid>
-        <img src="img/background.png">
-
-        <div class="uk-card uk-card-default uk-card-body uk-margin">
-          <h2 class="uk-card-title">Team Fundraising</h2>
-          <p>Invite your team in seconds to utilize our social leaderboards, trackable links, personalized pages, and more.</p>
-          <img src="img/team-1.png">
-          <img src="img/team-2.png">
+  </head>
+  <body>
+    <div class="uk-margin-top">
+      <!-- <div class=""> -->
+        <!-- Title -->
+        <div class="uk-align-center my-container">
+          <h1 class="uk-text-center">Your One Stop Shop For Fundraising</h1>
+          <h3 class="uk-text-center">Jam-Packed with features to help you raise more money than you ever thought was possible</h3>
         </div>
 
-        <div class="uk-grid-match uk-child-width-expand uk-margin" uk-grid>
-          <div class="uk-card uk-card-default uk-card-body uk-width-1-3">
-            <h2 class="uk-card-title">Show Donor Impact</h2>
-            <p>Show donors the direct impact of their donation</p>
-            <div>
-              <div>
-                <h1>$150</h1>
-                <div>
-                  <img src="img/coins.png">
-                  <img src="img/coins.png">
-                  <img src="img/coins.png">
-                  <p>Care package</p>
+      <!-- full-page grid container -->
+      <div id="bg" class="uk-inline uk-cover-container uk-align-center" uk-grid>
+
+        <!-- background image -->
+        <img src="img/background.png" uk-cover>
+
+        <div class="my-container">
+          <!-- First card, full width -->
+          <div class="wrapper">
+          <div class="one">
+            <ul class="uk-card uk-card-default uk-card-body uk-child-width-1-3 uk-margin-small" uk-grid>
+              <li>
+                <h2 class="uk-card-title">Team Fundraising</h2>
+                <p>Invite your team in seconds to utilize our social leaderboards, trackable links, personalized pages, and more.</p>
+              </li>
+              <li class="uk-cover-container uk-flex-inline">
+                <img src="img/team-1.png" uk-cover>
+                <!-- <canvas width="70" height="auto"></canvas> -->
+              </li>
+              <li class="uk-cover-container uk-flex-inline">
+                <img src="img/team-2.png" uk-cover>
+                <!-- <canvas width="70" height="auto"></canvas> -->
+              </li>
+            </ul>
+          </div> <!-- one -->
+
+        <!-- 4 square grid -->
+        <!-- <div class=""> -->
+          <!-- first row -->
+          <!-- <div class=""> -->
+            <!-- second card, 1/3 width -->
+            <div class="two">
+              <div class="uk-card uk-card-default uk-card-body">
+                <div class="">
+                  <h2 class="uk-card-title">Show Donor Impact</h2>
+                  <p>Show donors the direct impact of their donation</p>
                 </div>
+
+                <ul class="" uk-grid>
+                  <li class="uk-child-width-1-2 uk-flex-inline">
+                    <div>
+                      <h1>$150</h1>
+                    </div>
+                    <div class="uk-align-right">
+                      <div class="uk-flex-inline">
+                        <img src="img/coins.png" class="monies">
+                        <img src="img/coins.png" class="monies">
+                        <img src="img/coins.png" class="monies">
+                      </div>
+                      <div class=""><h6>Care package</h6></div>
+                    </div>
+                  </li>
+
+                  <li class="uk-child-width-1-2 uk-flex-inline">
+                    <div>
+                      <h1>$100</h1>
+                    </div>
+                    <div class="uk-align-right">
+                      <div class="uk-flex-inline">
+                        <img src="img/coins.png" class="monies">
+                        <img src="img/coins.png" class="monies">
+                      </div>
+                      <div><h6>Medical supplies</h6></div>
+                    </div>
+                  </li>
+
+                  <li class="uk-child-width-1-2 uk-flex-inline">
+                    <div><h1>$20</h1></div>
+                    <div class="uk-align-right">
+                      <div class="uk-flex-inline">
+                        <img src="img/coin.png" class="monies">
+                        <img src="img/coin.png" class="monies">
+                      </div>
+                      <div><h6>Food & water</h6></div>
+                    </div>
+                  </li>
+
+                  <li class="uk-child-width-1-2 uk-flex-inline">
+                    <div><h1>$10</h1></div>
+                    <div class="uk-align-right">
+                      <div class="uk-flex-inline">
+                        <img src="img/coin.png" class="monies">
+                      </div>
+                      <div><h6>A small gift</h6></div>
+                    </div>
+                  </li>
+                </ul>
+              </div> <!-- card -->
+            </div> <!-- two -->
+
+            <!-- third card -->
+            <div class="three">
+              <div class="uk-card uk-card-default uk-card-body">
+                <h2 class="uk-card-title">All-In-One Dashboard</h2>
+                <p>The most powerful free donor management system in the world. Easily take advantage of our in-depth analytics, actionable insights, robust communication tools, and more.</p>
+                <img src="img/dashboard.png">
+              </div> <!-- card -->
+            </div> <!-- three -->
+        <!--   </div>   first row -->
+
+          <!-- fourth card -->
+          <!-- <div> -->
+          <div class="four">
+            <div class="uk-card uk-card-default uk-card-body ">
+              <div class="uk-card-title uk-panel" uk-grid>
+                <h2 class="uk-card-title uk-width-2-3">Events, Ticketing & Registration</h2>
+                <img src="img/ticket.png" class="ticket uk-margin-remove uk-width-auto">
               </div>
-              <div>
-                <h1>$100</h1>
-                <div>
-                  <img src="img/coins.png">
-                  <img src="img/coins.png">
-                  <p>Medical supplies</p>
-                </div>
-              </div>
-              <div>
-                <h1>$20</h1>
-                <div>
-                  <img src="img/coin.png">
-                  <img src="img/coin.png">
-                  <p>Food & water</p>
-                </div>
-              </div>
-              <div>
-                <h1>$10</h1>
-                <div>
-                  <img src="img/coin.png">
-                  <p>A small gift</p>
-                </div>
-              </div>
+              <p>Use Givebutter for your next philanthropy event to sell tickets, register guests, and collect donations all in one place.</p>
             </div>
           </div>
+          <!-- fifth card -->
+          <div class="five">
+            <div class="uk-card uk-card-default uk-card-body">
+              <div class="uk-panel uk-margin-bottom">
+                <p class="right-arrow uk-text-right uk-text-uppercase"><a href="#" class="features">Explore Features </a>&#8594;</p>
+              </div>
+              <ul class="uk-child-width-1-2" uk-grid>
+                <li>Social Giving Experience</li>
+                <li>Personalized Support</li>
+                <li>Donor Matching</li>
+                <li>Corporate Sponsorships</li>
+                <li>Donor Management</li>
+                <li>Instant Payouts</li>
+              </ul>
+            </div><!-- card -->
+          </div> <!-- five -->
+          <!-- </div> -->
 
-          <div class="uk-card uk-card-default uk-card-body uk-width-2-3 uk-margin">
-            <h2 class="uk-card-title">All-In-One Dashboard</h2>
-            <p>The most powerful free donor management system in the world. Easily take advantage of our in-depth analytics, actionable insights, robust communication tools, and more.</p>
-            <img src="img/dashboard.png">
-          </div>
-        </div>
-
-        <div class="uk-grid-match uk-child-width-expand" uk-grid>
-          <div class="uk-card uk-card-default uk-card-body uk-width-1-3 uk-margin">
-            <h2 class="uk-card-title">Events, Ticketing & Registration</h2>
-            <img src="img/ticket.png">
-            <p>Use Givebutter for your next philanthropy event to sell tickets, register guests, and collect donations all in one place.</p>
-          </div>
-
-          <div class="uk-card uk-card-default uk-card-body uk-width-2-3 uk-margin">
-            <h4>Explore Features</h4>
-            <ul>
-              <li>Social Giving Experience</li>
-              <li>Personalized Support</li>
-              <li>Donor Matching</li>
-              <li>Corporate Sponsorships</li>
-              <li>Donor Management</li>
-              <li>Instant Payouts</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      </div>
-    </body>
+          </div> <!-- wrapper -->
+        <!-- </div> -->
+        </div> <!-- my-container -->
+      </div> <!-- cover container #bg -->
+      <!-- </div> -->
+    </div> <!--uk-margin-top -->
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script src="js/my.js"></script>
+  </body>
 </html>

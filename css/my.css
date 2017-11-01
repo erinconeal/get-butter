@@ -1,0 +1,68 @@
+.my-container {
+	margin: 0 auto;
+	width: 75%;
+	max-width: 1200px;
+	/*padding: 10px;*/
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 15px;
+	grid-auto-rows: column;
+	grid-auto-columns: 300px 100px;
+	align-items: stretch;
+}
+
+.one {
+	grid-column: 1 / 4;
+	grid-row: 1;
+}
+.two {
+	grid-column: 1 / 2;
+	grid-row: 2;
+}
+.three {
+	grid-column: 2 / 4;
+	grid-row: 2;
+}
+.four {
+	grid-column: 1 / 2;
+	grid-row: 3;
+}
+.five {
+	grid-column: 2 / 4;
+	grid-row: 3;
+}
+
+#bg {
+	width: 100vw;
+}
+
+.monies {
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+}
+
+li {
+	list-style: none;
+}
+
+.ticket {
+	display: block;
+	max-width: 75px;
+	max-height: 35px;
+	width: auto;
+	height: auto;
+}
+
+.features {
+	text-transform: capitalize;
+	text-decoration: underline;
+	text-decoration-color: #1e87f0;
+}
+
+.right-arrow {
+	color: #1e87f0;
+}
